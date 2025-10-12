@@ -1,17 +1,20 @@
-import * as vscode from 'vscode'
-import * as nls from 'vscode-nls'
+import * as vscode from 'vscode';
+import * as nls from 'vscode-nls';
 
-const localize = nls.config({ messageFormat: nls.MessageFormat.file })()
+const localize = nls.config({ messageFormat: nls.MessageFormat.file })();
 
-export type LargeOutputAction = 'open' | 'copy' | 'cancel'
+export type LargeOutputAction = 'open' | 'copy' | 'cancel';
 
-export async function chooseLargeOutputAction(count: number, hasContextualNotes = false): Promise<LargeOutputAction> {
+export async function chooseLargeOutputAction(
+	count: number,
+	hasContextualNotes = false,
+): Promise<LargeOutputAction> {
 	// Enhanced warning with contextual notes
 	const baseMessage = localize(
 		'runtime.prompt.large-output.body',
 		'Detected {0} strings. Opening large results may freeze the editor. What would you like to do?',
 		count,
-	)
+	);
 	const notes = hasContextualNotes
 		? [
 				'',
@@ -20,9 +23,9 @@ export async function chooseLargeOutputAction(count: number, hasContextualNotes 
 				'• CSV streaming/editor-first (no auto‑copy)',
 				'• Dedupe/Sort apply to final strings only',
 			].join('\n')
-		: ''
+		: '';
 
-	const fullMessage = notes ? `${baseMessage}\n${notes}` : baseMessage
+	const fullMessage = notes ? `${baseMessage}\n${notes}` : baseMessage;
 
 	const choice = await vscode.window.showWarningMessage(
 		fullMessage,
@@ -30,13 +33,18 @@ export async function chooseLargeOutputAction(count: number, hasContextualNotes 
 		localize('runtime.dialog.action.open', 'Open results'),
 		localize('runtime.dialog.action.copy', 'Copy only'),
 		localize('runtime.dialog.action.cancel', 'Cancel'),
-	)
-	if (!choice || choice === localize('runtime.dialog.action.cancel', 'Cancel')) return 'cancel'
-	if (choice === localize('runtime.dialog.action.copy', 'Copy only')) return 'copy'
-	return 'open'
+	);
+	if (!choice || choice === localize('runtime.dialog.action.cancel', 'Cancel'))
+		return 'cancel';
+	if (choice === localize('runtime.dialog.action.copy', 'Copy only'))
+		return 'copy';
+	return 'open';
 }
 
-export async function confirmManyDocuments(countDocs: number, totalLines: number): Promise<boolean> {
+export async function confirmManyDocuments(
+	countDocs: number,
+	totalLines: number,
+): Promise<boolean> {
 	const choice = await vscode.window.showWarningMessage(
 		localize(
 			'runtime.dialog.many-docs.message',
@@ -47,8 +55,8 @@ export async function confirmManyDocuments(countDocs: number, totalLines: number
 		{ modal: true },
 		localize('runtime.dialog.action.open', 'Open results'),
 		localize('runtime.dialog.action.cancel', 'Cancel'),
-	)
-	return choice === localize('runtime.dialog.action.open', 'Open results')
+	);
+	return choice === localize('runtime.dialog.action.open', 'Open results');
 }
 
-void localize
+void localize;

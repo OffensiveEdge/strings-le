@@ -1,8 +1,8 @@
-import * as vscode from 'vscode'
-import * as nls from 'vscode-nls'
-import type { createTelemetry } from '../telemetry/telemetry'
+import * as vscode from 'vscode';
+import * as nls from 'vscode-nls';
+import type { createTelemetry } from '../telemetry/telemetry';
 
-const localize = nls.config({ messageFormat: nls.MessageFormat.file })()
+const localize = nls.config({ messageFormat: nls.MessageFormat.file })();
 
 export const registerHelpWebviewCommand = (
 	context: vscode.ExtensionContext,
@@ -10,16 +10,16 @@ export const registerHelpWebviewCommand = (
 ) =>
 	context.subscriptions.push(
 		vscode.commands.registerCommand('string-le.help', async () => {
-			telemetry.event('command', { name: 'help' })
+			telemetry.event('command', { name: 'help' });
 			const panel = vscode.window.createWebviewPanel(
 				'string-le.help',
 				localize('runtime.help.title', 'Troubleshooting'),
 				vscode.ViewColumn.Active,
 				{ enableScripts: false },
-			)
-			panel.webview.html = html
+			);
+			panel.webview.html = html;
 		}),
-	)
+	);
 
 const html = `<!DOCTYPE html>
   <html lang="en">
@@ -41,4 +41,4 @@ const html = `<!DOCTYPE html>
   </head>
   <body>
   </body>
-  </html>`
+  </html>`;

@@ -1,4 +1,4 @@
-import { vi } from 'vitest'
+import { vi } from 'vitest';
 
 export const Uri = {
 	file: vi.fn((path: string) => ({
@@ -13,7 +13,7 @@ export const Uri = {
 		scheme: 'file',
 		toString: () => str,
 	})),
-}
+};
 
 export const workspace = {
 	getConfiguration: vi.fn(() => ({
@@ -44,7 +44,7 @@ export const workspace = {
 	onDidChangeConfiguration: vi.fn(() => ({
 		dispose: vi.fn(),
 	})),
-}
+};
 
 export const window = {
 	activeTextEditor: undefined,
@@ -65,12 +65,12 @@ export const window = {
 		show: vi.fn(),
 		dispose: vi.fn(),
 	})),
-}
+};
 
 export const commands = {
 	registerCommand: vi.fn(),
 	executeCommand: vi.fn(),
-}
+};
 
 export const ViewColumn = {
 	One: 1,
@@ -84,59 +84,61 @@ export const ViewColumn = {
 	Nine: 9,
 	Active: -1,
 	Beside: -2,
-}
+};
 
 export const mockExtensionContext = {
 	subscriptions: {
 		push: vi.fn(),
 	},
-}
+};
 
 export const languages = {
 	registerCodeActionsProvider: vi.fn(),
-}
+};
 
 export const CodeActionKind = {
 	QuickFix: 'quickfix',
 	Refactor: 'refactor',
 	Source: 'source',
 	Empty: '',
-}
+};
 
 export const ProgressLocation = {
 	SourceControl: 1,
 	Window: 10,
 	Notification: 15,
-}
+};
 
 export const CancellationToken = {
 	None: {
 		isCancellationRequested: false,
 		onCancellationRequested: vi.fn(),
 	},
-}
+};
 
-export const Range = vi.fn((startLine: number, startChar: number, endLine: number, endChar: number) => ({
-	start: { line: startLine, character: startChar },
-	end: { line: endLine, character: endChar },
-}))
+export const Range = vi.fn(
+	(startLine: number, startChar: number, endLine: number, endChar: number) => ({
+		start: { line: startLine, character: startChar },
+		end: { line: endLine, character: endChar },
+	}),
+);
 
 export const Position = {
 	create: vi.fn(),
-}
+};
 
 export const StatusBarAlignment = {
 	Left: 1,
 	Right: 2,
-}
+};
 
-export const TextEditorEdit = vi.fn()
+export const TextEditorEdit = vi.fn();
 
 export const TextEdit = {
 	replace: vi.fn(),
 	insert: vi.fn(),
 	delete: vi.fn(),
-}
+};
 
 // Mock for editor.edit functionality
 const _mockEdit = vi.fn((callback) => {
@@ -144,13 +146,13 @@ const _mockEdit = vi.fn((callback) => {
 		replace: vi.fn(),
 		insert: vi.fn(),
 		delete: vi.fn(),
-	}
-	callback(edit)
-	return Promise.resolve(true)
-})
+	};
+	callback(edit);
+	return Promise.resolve(true);
+});
 
 // Mock document positionAt function
 const _mockPositionAt = vi.fn((offset: number) => ({
 	line: Math.floor(offset / 10), // Simple mock calculation
 	character: offset % 10,
-}))
+}));

@@ -3,10 +3,10 @@
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
-		"useIgnoreFile": true
+		"useIgnoreFile": false
 	},
 	"files": {
-		"ignoreUnknown": true,
+		"ignoreUnknown": false,
 		"includes": ["src/**/*.ts", "src/**/*.js"]
 	},
 	"formatter": {
@@ -18,15 +18,36 @@
 		"rules": {
 			"recommended": true,
 			"suspicious": {
-				"noExplicitAny": "off"
+				"noExplicitAny": "warn",
+				"noImplicitAnyLet": "off",
+				"noAssignInExpressions": "off"
+			},
+			"style": {
+				"noNonNullAssertion": "off"
 			}
 		}
 	},
+	"overrides": [
+		{
+			"includes": ["**/*.test.ts", "**/__mocks__/**"],
+			"linter": {
+				"rules": {
+					"suspicious": {
+						"noExplicitAny": "off",
+						"noImplicitAnyLet": "off",
+						"noAssignInExpressions": "off"
+					},
+					"correctness": {
+						"noUnusedFunctionParameters": "off"
+					}
+				}
+			}
+		}
+	],
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single",
-			"semicolons": "asNeeded",
-			"lineWidth": 120
+			"semicolons": "always"
 		}
 	}
 }
