@@ -5,6 +5,18 @@ All notable changes to String-LE will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.3] - 2025-10-12
+
+### 🎨 Visual Updates
+
+- **Updated extension icon**: Refreshed icon design for better visibility and branding
+
+## [1.3.2] - 2025-10-12
+
+### 🎨 Visual Updates
+
+- **Updated extension icon**: Improved icon design and visual consistency
+
 ## [1.3.1] - 2025-10-12
 
 ### 🐛 Bug Fixes
