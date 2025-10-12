@@ -34,9 +34,8 @@ describe('extension activation', () => {
 		expect(registered).toContain('string-le.csv.toggleStreaming');
 		expect(registered).toContain('string-le.postProcess.trim');
 
-		// Settings and help commands
+		// Settings command
 		expect(registered).toContain('string-le.openSettings');
-		expect(registered).toContain('string-le.help');
 	});
 
 	it('registers code actions provider', async () => {
@@ -79,18 +78,6 @@ describe('extension activation', () => {
 
 		// Verify that context subscriptions are added (indicating successful setup)
 		expect(mockExtensionContext.subscriptions.push).toHaveBeenCalled();
-	});
-
-	it('registers help webview command with telemetry', async () => {
-		const { activate } = await import('./extension');
-
-		activate(mockExtensionContext as any);
-
-		// Check that help command is registered
-		const registered = (commands.registerCommand as any).mock.calls.map(
-			(c: any[]) => c[0],
-		);
-		expect(registered).toContain('string-le.help');
 	});
 
 	it('registers settings command with telemetry', async () => {

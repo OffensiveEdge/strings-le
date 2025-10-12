@@ -3,7 +3,7 @@
 	"publisher": "nolindnaidoo",
 	"displayName": "Strings-LE",
 	"description": "Zero Hassle Extraction from JSON, YAML, CSV, TOML, INI, and .ENV",
-	"version": "1.3.0",
+	"version": "1.3.1",
 	"license": "MIT",
 	"author": {
 		"name": "Nolin D Naidoo",
@@ -67,8 +67,7 @@
 		"onCommand:string-le.postProcess.dedupe",
 		"onCommand:string-le.postProcess.sort",
 		"onCommand:string-le.csv.toggleStreaming",
-		"onCommand:string-le.openSettings",
-		"onCommand:string-le.help"
+		"onCommand:string-le.openSettings"
 	],
 	"capabilities": {
 		"virtualWorkspaces": {
@@ -107,17 +106,12 @@
 				"title": "%manifest.command.csv.toggle-streaming.title%",
 				"category": "%manifest.command.category%"
 			},
-			{
-				"command": "string-le.openSettings",
-				"title": "%manifest.command.settings.title%",
-				"category": "%manifest.command.category%"
-			},
-			{
-				"command": "string-le.help",
-				"title": "%manifest.command.help.title%",
-				"category": "%manifest.command.category%"
-			},
-			{
+		{
+			"command": "string-le.openSettings",
+			"title": "%manifest.command.settings.title%",
+			"category": "%manifest.command.category%"
+		},
+		{
 				"command": "string-le.settings.export",
 				"title": "%manifest.command.settings.export.title%",
 				"category": "%manifest.command.category%"
@@ -165,13 +159,10 @@
 				{
 					"command": "string-le.csv.toggleStreaming"
 				},
-				{
-					"command": "string-le.openSettings"
-				},
-				{
-					"command": "string-le.help"
-				},
-				{
+			{
+				"command": "string-le.openSettings"
+			},
+			{
 					"command": "string-le.settings.export"
 				},
 				{

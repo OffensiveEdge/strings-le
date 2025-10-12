@@ -5,6 +5,24 @@ All notable changes to String-LE will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2025-10-12
+
+### 🐛 Bug Fixes
+
+- **Removed webview help system**: Eliminated unnecessary webview panel that caused memory leaks on repeated help command invocations
+- **Code cleanup**: Removed unused help command registration and related infrastructure
+
+### 🔧 Technical Improvements
+
+- Improved extension activation by removing redundant help webview code
+- Better memory management with simplified command structure
+- Reduced bundle size by removing webview HTML and related utilities
+
+### 📝 Documentation
+
+- Updated package.json to remove help command references
+- Cleaned up test suite to reflect current command structure
+
 ## [1.3.0] - 2025-10-11
 
 ### 🎉 Initial Public Release
