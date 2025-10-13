@@ -103,7 +103,9 @@ function runPerformanceTests(): PerformanceResult {
 			metrics.push(metric);
 
 			console.log(
-				`  ✓ Processed ${metric.lineCount.toLocaleString()} lines in ${metric.extractionTimeMs}ms`,
+				`  ✓ Processed ${metric.lineCount.toLocaleString()} lines in ${
+					metric.extractionTimeMs
+				}ms`,
 			);
 			console.log(
 				`  ✓ Extracted ${metric.extractedCount.toLocaleString()} strings`,
@@ -198,7 +200,9 @@ function formatPerformanceReport(result: PerformanceResult): string {
 
 		report += `**${format.toUpperCase()}:** `;
 		report += `Average ${Math.round(avgTime * 100) / 100}ms extraction time, `;
-		report += `${Math.round(avgExtracted).toLocaleString()} strings extracted on average.\n\n`;
+		report += `${Math.round(
+			avgExtracted,
+		).toLocaleString()} strings extracted on average.\n\n`;
 	}
 
 	return report;
