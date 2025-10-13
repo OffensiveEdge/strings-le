@@ -41,30 +41,6 @@ Thank you for using Strings-LE! If this extension has been helpful in extracting
 
 ⭐ **Enjoying Strings-LE?** [Leave a rating](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.string-le) and help others find it too!
 
-## 🚀 More from the LE Family
-
-**Strings-LE** is part of a growing family of developer tools designed to make your workflow effortless:
-
-- **EnvSync-LE** - Effortlessly detect, compare, and synchronize .env files across your workspace with visual diffs  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.envsync-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/envsync-le)]
-
-- **Numbers-LE** - Extract and analyze numeric data from JSON, YAML, CSV, TOML, INI, and .env files  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.numbers-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/numbers-le)]
-
-- **Colors-LE** - Extract and analyze colors from CSS, HTML, JavaScript, and more  
-  _Coming October 2025_
-
-- **Dates-LE** - Extract and analyze dates from logs, APIs, and temporal data  
-  _Coming October 2025_
-
-- **Paths-LE** - Extract and analyze file paths from imports, configs, and dependencies  
-  _Coming October 2025_
-
-- **URLs-LE** - Extract and analyze URLs from web content, APIs, and resources  
-  _Coming October 2025_
-
-Each tool follows the same philosophy: **Zero Hassle, Maximum Productivity**.
-
 ## ✅ Why Strings-LE
 
 **Modern projects scatter text everywhere** — APIs, configs, CSVs, and locale files across both native and web. Keeping those strings consistent is still a slow, manual grind.
@@ -93,6 +69,30 @@ It smartly pulls out only the **true user-visible strings** (never numbers, IDs,
 
 - **Fast at any scale**  
   Benchmarked at millions of lines per second, String-LE keeps up with large datasets and enterprise monorepos without slowing you down.
+
+## 🚀 More from the LE Family
+
+**Strings-LE** is part of a growing family of developer tools designed to make your workflow effortless:
+
+- **EnvSync-LE** - Effortlessly detect, compare, and synchronize .env files across your workspace with visual diffs  
+  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.envsync-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/envsync-le)]
+
+- **Numbers-LE** - Extract and analyze numeric data from JSON, YAML, CSV, TOML, INI, and .env files  
+  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.numbers-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/numbers-le)]
+
+- **Colors-LE** - Extract and analyze colors from CSS, HTML, JavaScript, and more  
+  _Coming October 2025_
+
+- **Dates-LE** - Extract and analyze dates from logs, APIs, and temporal data  
+  _Coming October 2025_
+
+- **Paths-LE** - Extract and analyze file paths from imports, configs, and dependencies  
+  _Coming October 2025_
+
+- **URLs-LE** - Extract and analyze URLs from web content, APIs, and resources  
+  _Coming October 2025_
+
+Each tool follows the same philosophy: **Zero Hassle, Maximum Productivity**.
 
 ## 💡 Use Cases & Examples
 
