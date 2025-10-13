@@ -35,8 +35,9 @@
 <p align="center">
   <img src="src/assets/images/preview.gif" alt="CSV Streaming (Editor) animation" style="max-width: 100%; height: auto;" />
 </p>
-<p align="right">
- <a href="https://github.com/nolindnaidoo/string-le/blob/main/docs/SCREENSHOTS.md">Screenshot Guide</a>
+
+<p align="center">
+  <img src="src/assets/images/command-palette.png" alt="Command Palette" style="max-width: 80%; height: auto;" />
 </p>
 
 ## 🙏 Thank You!
