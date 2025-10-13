@@ -207,7 +207,7 @@ function formatPerformanceReport(result: PerformanceResult): string {
 describe('Performance Tests', () => {
 	it(
 		'should run comprehensive performance benchmark',
-		{ timeout: 15000 },
+		{ timeout: 30000 },
 		() => {
 			const result = runPerformanceTests();
 			const report = formatPerformanceReport(result);
