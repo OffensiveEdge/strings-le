@@ -6,16 +6,16 @@ Test files for String-LE string extraction functionality across all supported fo
 
 ## 📋 Sample Files Overview
 
-| File               | Format | Strings | Description                                         |
-| ------------------ | ------ | ------- | --------------------------------------------------- |
-| `sample.json`      | JSON   | ~80     | Nested objects with UI strings, messages, labels    |
-| `sample.yaml`      | YAML   | ~60     | Configuration with localization and error messages  |
-| `sample.csv`       | CSV    | ~100    | Product data with descriptions and status messages  |
-| `sample.toml`      | TOML   | ~70     | Server config with features and notifications       |
-| `sample.ini`       | INI    | ~65     | Application settings with UI labels and messages    |
-| `sample.env`       | ENV    | ~70     | Environment variables with application strings      |
-| `edge-cases.json`  | JSON   | ~50     | Edge cases: unicode, emojis, special characters     |
-| `large-sample.json`| JSON   | ~200+   | Large dataset for performance testing               |
+| File                | Format | Strings | Description                                        |
+| ------------------- | ------ | ------- | -------------------------------------------------- |
+| `sample.json`       | JSON   | ~80     | Nested objects with UI strings, messages, labels   |
+| `sample.yaml`       | YAML   | ~60     | Configuration with localization and error messages |
+| `sample.csv`        | CSV    | ~100    | Product data with descriptions and status messages |
+| `sample.toml`       | TOML   | ~70     | Server config with features and notifications      |
+| `sample.ini`        | INI    | ~65     | Application settings with UI labels and messages   |
+| `sample.env`        | ENV    | ~70     | Environment variables with application strings     |
+| `edge-cases.json`   | JSON   | ~50     | Edge cases: unicode, emojis, special characters    |
+| `large-sample.json` | JSON   | ~200+   | Large dataset for performance testing              |
 
 **Total**: ~700+ strings across 8 files demonstrating comprehensive format coverage
 
@@ -58,6 +58,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Standard JSON application strings
 
 **Contents**:
+
 - UI labels and buttons
 - Validation messages
 - Notifications
@@ -75,6 +76,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Configuration file with localization
 
 **Contents**:
+
 - Application metadata
 - UI theme strings
 - Error messages
@@ -92,6 +94,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Tabular data with text columns
 
 **Contents**:
+
 - Product names
 - Descriptions
 - Categories
@@ -109,6 +112,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Server configuration strings
 
 **Contents**:
+
 - Application metadata
 - Feature descriptions
 - UI labels and placeholders
@@ -126,6 +130,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Windows-style INI configuration
 
 **Contents**:
+
 - Application labels
 - Dialog messages
 - Menu items
@@ -143,6 +148,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Environment configuration strings
 
 **Contents**:
+
 - Application metadata
 - User messages
 - Email templates
@@ -160,6 +166,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Boundary conditions and special cases
 
 **Contents**:
+
 - Empty strings
 - Unicode characters (Chinese, Arabic, Hebrew)
 - Emojis
@@ -180,6 +187,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Purpose**: Test performance with larger datasets
 
 **Contents**:
+
 - User arrays (10+ users)
 - Product arrays (5+ products)
 - Multiple message categories
@@ -198,6 +206,7 @@ Test files for String-LE string extraction functionality across all supported fo
 
 **Goal**: Extract all strings in order  
 **Steps**:
+
 1. Open any sample file
 2. Run **Extract Strings**
 3. Verify all strings extracted
@@ -212,6 +221,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Remove duplicate strings  
 **Settings**: `string-le.dedupeEnabled: true`  
 **Steps**:
+
 1. Open `sample.csv` (has duplicate categories)
 2. Run **Extract Strings**
 3. Verify duplicates removed
@@ -225,6 +235,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Sort strings A-Z  
 **Settings**: `string-le.sortEnabled: true`  
 **Steps**:
+
 1. Open any sample file
 2. Run **Extract Strings**
 3. Verify alphabetical ordering
@@ -238,6 +249,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Test streaming for large CSV  
 **Settings**: `string-le.csv.streamingEnabled: true`  
 **Steps**:
+
 1. Open `sample.csv`
 2. Run **Extract Strings**
 3. Select columns when prompted
@@ -251,6 +263,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Open results beside source  
 **Settings**: `string-le.openResultsSideBySide: true`  
 **Steps**:
+
 1. Open any sample file
 2. Run **Extract Strings**
 3. Verify split view
@@ -264,6 +277,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Auto-copy results  
 **Settings**: `string-le.copyToClipboardEnabled: true`  
 **Steps**:
+
 1. Open any sample file
 2. Run **Extract Strings**
 3. Paste clipboard (Cmd/Ctrl+V)
@@ -276,6 +290,7 @@ Test files for String-LE string extraction functionality across all supported fo
 
 **Goal**: Test notification verbosity  
 **Settings**: Try each:
+
 - `string-le.notificationsLevel: "silent"` - No notifications
 - `string-le.notificationsLevel: "important"` - Important only
 - `string-le.notificationsLevel: "all"` - All messages
@@ -289,6 +304,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Test status bar functionality  
 **Settings**: `string-le.statusBar.enabled: true`  
 **Steps**:
+
 1. Run **Extract Strings**
 2. Check status bar (bottom right)
 3. Verify count appears
@@ -302,6 +318,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Test whitespace trimming  
 **Settings**: `string-le.trimWhitespace: true`  
 **Steps**:
+
 1. Open `edge-cases.json` (has whitespace strings)
 2. Run **Extract Strings**
 3. Verify trimmed output
@@ -315,6 +332,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Goal**: Test performance with large files  
 **Settings**: Default  
 **Steps**:
+
 1. Open `large-sample.json`
 2. Run **Extract Strings**
 3. Measure extraction time
@@ -407,11 +425,13 @@ Test files for String-LE string extraction functionality across all supported fo
 ### Issue: No Strings Extracted
 
 **Possible Causes**:
+
 1. File type not supported
 2. File contains only non-string data
 3. Parse error
 
 **Solution**:
+
 - Verify file extension (.json, .yaml, .csv, .toml, .ini, .env)
 - Check file contains string values
 - Enable `string-le.showParseErrors: true`
@@ -421,10 +441,12 @@ Test files for String-LE string extraction functionality across all supported fo
 ### Issue: Performance Issues
 
 **Possible Causes**:
+
 1. Very large file (> 100MB)
 2. Sorting/deduplication on large output
 
 **Solution**:
+
 - Enable CSV streaming: `string-le.csv.streamingEnabled: true`
 - Disable sorting: `string-le.sortEnabled: false`
 - Disable deduplication: `string-le.dedupeEnabled: false`
@@ -434,10 +456,12 @@ Test files for String-LE string extraction functionality across all supported fo
 ### Issue: Unexpected Strings
 
 **Possible Causes**:
+
 1. Numbers or IDs extracted as strings
 2. Technical values extracted
 
 **Solution**:
+
 - This is expected behavior - all string values extracted
 - Use deduplication to clean results
 - Manually filter as needed
@@ -447,10 +471,12 @@ Test files for String-LE string extraction functionality across all supported fo
 ### Issue: Results Not Appearing
 
 **Possible Causes**:
+
 1. Extension not activated
 2. VS Code error
 
 **Solution**:
+
 - Reload VS Code: **Developer: Reload Window**
 - Check Output panel → "String-LE"
 - Enable telemetry for detailed logs
@@ -578,6 +604,7 @@ Test files for String-LE string extraction functionality across all supported fo
 **Need Help?** Check [GitHub Issues](https://github.com/nolindnaidoo/string-le/issues) or open a new issue.
 
 **Found a bug?** Report with:
+
 1. Sample file (or minimal reproduction)
 2. Expected behavior
 3. Actual behavior
@@ -587,4 +614,3 @@ Test files for String-LE string extraction functionality across all supported fo
 ---
 
 Copyright © 2025 @nolindnaidoo. All rights reserved.
-
