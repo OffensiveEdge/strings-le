@@ -5,28 +5,23 @@ All notable changes to String-LE will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.3.7] - 2025-10-14
+## [1.4.0] - 2025-10-14
 
 ### Added
 
-- **Help command** - Added comprehensive help and troubleshooting documentation
-- **Command palette entry** - "String-LE: Help & Troubleshooting" accessible from command palette
-- **In-editor docs** - Opens formatted markdown help in new editor tab
+- **Command parity achievement** - Full parity with other LE extraction extensions
+- **Help command** - Added comprehensive help and troubleshooting documentation accessible from command palette
+- **Comprehensive documentation** - Added complete command list to README with examples
+- **Documentation updates** - Updated all docs to reflect command parity achievement
 
 ### Changed
 
-- **Command count** - Increased from 6 to 7 commands for better user support
-
-## [1.3.6] - 2025-10-14
+- **Infrastructure verification** - Verified activation events, command registry, and all infrastructure components
+- **Command count** - Stabilized at 7 commands (Extract, Dedupe, Sort, Trim, CSV Toggle, Settings, Help)
 
 ### Removed
 
 - **Broken commands** - Removed non-functional export/import/reset settings commands that were never implemented
-- **i18n cleanup** - Removed broken command keys from all 25 language files
-
-### Changed
-
-- **Command count** - Reduced from 9 to 6 commands (all remaining commands are fully functional)
 
 ## [1.3.5] - 2025-10-14
 

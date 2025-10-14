@@ -1,22 +1,22 @@
-import * as vscode from 'vscode';
-import type { Telemetry } from '../telemetry/telemetry';
-import type { Notifier } from '../ui/notifier';
-import type { StatusBar } from '../ui/statusBar';
+import * as vscode from "vscode";
+import type { Telemetry } from "../telemetry/telemetry";
+import type { Notifier } from "../ui/notifier";
+import type { StatusBar } from "../ui/statusBar";
 
 export function registerHelpCommand(
-	context: vscode.ExtensionContext,
-	deps: Readonly<{
-		telemetry: Telemetry;
-		notifier: Notifier;
-		statusBar: StatusBar;
-	}>,
+  context: vscode.ExtensionContext,
+  deps: Readonly<{
+    telemetry: Telemetry;
+    notifier: Notifier;
+    statusBar: StatusBar;
+  }>
 ): void {
-	const command = vscode.commands.registerCommand(
-		'string-le.help',
-		async () => {
-			deps.telemetry.event('command-help');
+  const command = vscode.commands.registerCommand(
+    "string-le.help",
+    async () => {
+      deps.telemetry.event("command-help");
 
-			const helpText = `
+      const helpText = `
 # String-LE Help & Troubleshooting
 
 ## Commands
@@ -111,13 +111,13 @@ Key settings:
 - Documentation: https://github.com/nolindnaidoo/string-le#readme
 		`.trim();
 
-			const doc = await vscode.workspace.openTextDocument({
-				content: helpText,
-				language: 'markdown',
-			});
-			await vscode.window.showTextDocument(doc);
-		},
-	);
+      const doc = await vscode.workspace.openTextDocument({
+        content: helpText,
+        language: "markdown",
+      });
+      await vscode.window.showTextDocument(doc);
+    }
+  );
 
-	context.subscriptions.push(command);
+  context.subscriptions.push(command);
 }
