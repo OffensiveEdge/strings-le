@@ -33,7 +33,7 @@
 ---
 
 <p align="center">
-  <img src="src/assets/images/preview.gif" alt="CSV Streaming (Editor) animation" style="max-width: 100%; height: auto;" />
+  <img src="src/assets/images/demo.gif" alt="String-LE Demo" style="max-width: 100%; height: auto;" />
 </p>
 
 <p align="center">
