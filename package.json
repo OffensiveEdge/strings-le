@@ -182,16 +182,16 @@
 					],
 					"description": "%manifest.settings.notifications.level.desc%"
 				},
-				"string-le.postProcess.openInNewFile": {
-					"type": "boolean",
-					"default": false,
-					"description": "%manifest.settings.open.new-file.desc%"
-				},
-				"string-le.openResultsSideBySide": {
-					"type": "boolean",
-					"default": false,
-					"description": "%manifest.settings.open.side-by-side.desc%"
-				},
+			"string-le.postProcess.openInNewFile": {
+				"type": "boolean",
+				"default": true,
+				"description": "%manifest.settings.open.new-file.desc%"
+			},
+			"string-le.openResultsSideBySide": {
+				"type": "boolean",
+				"default": true,
+				"description": "%manifest.settings.open.side-by-side.desc%"
+			},
 				"string-le.safety.enabled": {
 					"type": "boolean",
 					"default": true,
