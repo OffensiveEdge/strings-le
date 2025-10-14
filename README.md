@@ -70,7 +70,6 @@ It smartly pulls out only the **true user-visible strings** (never numbers, IDs,
 
   - **Sort** for stable diffs and reviews
   - **Dedupe** to eliminate noise
-  - **Trim whitespace** (NEW)
 
 - **Fast at any scale**  
   Benchmarked at millions of lines per second, String-LE keeps up with large datasets and enterprise monorepos without slowing you down.

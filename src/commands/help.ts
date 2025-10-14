@@ -23,7 +23,6 @@ export function registerHelpCommand(
 - **Extract Strings** (Ctrl+Alt+E / Cmd+Alt+E): Extract strings from the current document
 - **Deduplicate Strings**: Remove duplicate strings from extracted results
 - **Sort Strings**: Sort strings alphabetically (ascending or descending)
-- **Trim Strings**: Remove leading and trailing whitespace from strings
 - **Toggle CSV Streaming**: Enable/disable streaming for large CSV files
 - **Open Settings**: Configure String-LE settings
 - **Help**: Open this help documentation
@@ -56,11 +55,6 @@ Sorts strings alphabetically:
 - **Ascending (A-Z)**: apple, banana, cherry
 - **Descending (Z-A)**: cherry, banana, apple
 
-### Trim
-Removes leading and trailing whitespace from all strings:
-- "  hello  " → "hello"
-- "\\n\\tworld\\n" → "world"
-
 ## CSV Features
 For large CSV files (>10MB), enable streaming mode:
 - Command: "String-LE: Toggle CSV Streaming"
@@ -92,7 +86,6 @@ Key settings:
 - **Copy to clipboard**: Auto-copy results (default: false)
 - **Deduplication**: Automatically remove duplicates (default: false)
 - **Sorting**: Automatically sort results (default: false)
-- **Trimming**: Automatically trim whitespace (default: false)
 - **Side-by-side view**: Open results beside source (default: false)
 - **CSV streaming**: Enable for large CSV files (default: false)
 - **Safety checks**: File size warnings (default: 1MB threshold)

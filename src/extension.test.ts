@@ -32,7 +32,6 @@ describe('extension activation', () => {
 		expect(registered).toContain('string-le.postProcess.dedupe');
 		expect(registered).toContain('string-le.postProcess.sort');
 		expect(registered).toContain('string-le.csv.toggleStreaming');
-		expect(registered).toContain('string-le.postProcess.trim');
 
 		// Settings command
 		expect(registered).toContain('string-le.openSettings');

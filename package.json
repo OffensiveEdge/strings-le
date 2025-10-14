@@ -97,11 +97,6 @@
 				"category": "%manifest.command.category%"
 			},
 			{
-				"command": "string-le.postProcess.trim",
-				"title": "%manifest.command.trim.title%",
-				"category": "%manifest.command.category%"
-			},
-			{
 				"command": "string-le.csv.toggleStreaming",
 				"title": "%manifest.command.csv.toggle-streaming.title%",
 				"category": "%manifest.command.category%"
@@ -142,9 +137,6 @@
 				},
 				{
 					"command": "string-le.postProcess.sort"
-				},
-				{
-					"command": "string-le.postProcess.trim"
 				},
 				{
 					"command": "string-le.csv.toggleStreaming"
@@ -262,21 +254,6 @@
 					"default": false,
 					"description": "%manifest.settings.telemetry.desc%"
 				},
-				"string-le.postProcess.trimMode": {
-					"type": "string",
-					"default": "both",
-					"enum": [
-						"both",
-						"leading",
-						"trailing"
-					],
-					"enumDescriptions": [
-						"%manifest.settings.trim.mode.option.both%",
-						"%manifest.settings.trim.mode.option.leading%",
-						"%manifest.settings.trim.mode.option.trailing%"
-					],
-					"description": "%manifest.settings.trim.mode.desc%"
-				},
 				"string-le.performance.enabled": {
 					"type": "boolean",
 					"default": true,
@@ -331,11 +308,6 @@
 					"type": "string",
 					"default": "ctrl+alt+s",
 					"description": "%manifest.settings.keyboard.sort.shortcut.desc%"
-				},
-				"string-le.keyboard.trimShortcut": {
-					"type": "string",
-					"default": "ctrl+alt+t",
-					"description": "%manifest.settings.keyboard.trim.shortcut.desc%"
 				},
 				"string-le.presets.enabled": {
 					"type": "boolean",
