@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- **Default workflow** - All result-producing commands now open to the side by default for better workflow
+  - Extract: Opens results beside source automatically
+  - Dedupe: Opens deduplicated results beside original
+  - Sort: Opens sorted results beside original
+  - Help: Opens documentation beside code
+- **Settings defaults** - Changed `openResultsSideBySide` and `postProcess.openInNewFile` defaults from `false` to `true`
+- **Documentation** - Updated README to use new demo.gif
+
 ### Removed
 
 - **Trim command** - Removed trim whitespace command and related functionality to maintain command parity across LE extensions
