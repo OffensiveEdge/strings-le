@@ -100,9 +100,4 @@
 	"runtime.prompt.large-output.body": "Trovate {0} stringhe. Come desideri procedere?",
 	"runtime.note.postprocess-footnote": "Nota: le operazioni di ordinamento e deduplicazione si applicano all'elenco delle stringhe estratte.",
 
-	"manifest.command.trim.title": "Ritaglia spazi bianchi",
-	"manifest.settings.trim.mode.desc": "Scegli il comportamento di ritaglio",
-	"manifest.settings.trim.mode.option.both": "Inizio e fine",
-	"manifest.settings.trim.mode.option.leading": "Solo inizio",
-	"manifest.settings.trim.mode.option.trailing": "Solo fine"
 }

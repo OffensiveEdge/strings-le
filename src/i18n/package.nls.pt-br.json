@@ -100,9 +100,4 @@
 	"runtime.prompt.large-output.body": "Encontradas {0} strings. Como você deseja prosseguir?",
 	"runtime.note.postprocess-footnote": "Observação: as operações de classificação e deduplicação se aplicam à lista de strings extraídas.",
 
-	"manifest.command.trim.title": "Cortar espaços em branco",
-	"manifest.settings.trim.mode.desc": "Escolha o comportamento de corte",
-	"manifest.settings.trim.mode.option.both": "Início e fim",
-	"manifest.settings.trim.mode.option.leading": "Apenas início",
-	"manifest.settings.trim.mode.option.trailing": "Apenas fim"
 }

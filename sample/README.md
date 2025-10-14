@@ -313,21 +313,7 @@ Test files for String-LE string extraction functionality across all supported fo
 
 ---
 
-### Test 9: Trim Whitespace
-
-**Goal**: Test whitespace trimming  
-**Settings**: `string-le.trimWhitespace: true`  
-**Steps**:
-
-1. Open `edge-cases.json` (has whitespace strings)
-2. Run **Extract Strings**
-3. Verify trimmed output
-
-**Expected**: Leading/trailing whitespace removed
-
----
-
-### Test 10: Large File Handling
+### Test 9: Large File Handling
 
 **Goal**: Test performance with large files  
 **Settings**: Default  
@@ -519,18 +505,7 @@ Test files for String-LE string extraction functionality across all supported fo
 ✓ Compare source and results  
 ✓ Quick verification
 
-### 4. Trim Whitespace for Clean Output
-
-```json
-{
-  "string-le.trimWhitespace": true
-}
-```
-
-✓ Cleaner results  
-✓ Better for translation files
-
-### 5. Enable Safety Checks
+### 4. Enable Safety Checks
 
 ```json
 {

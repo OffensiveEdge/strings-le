@@ -100,9 +100,4 @@
 	"runtime.prompt.large-output.body": "{0}개의 문자열이 발견되었습니다. 어떻게 진행하시겠습니까?",
 	"runtime.note.postprocess-footnote": "참고: 정렬 및 중복 제거 작업은 추출된 문자열 목록에 적용됩니다.",
 
-	"manifest.command.trim.title": "공백 제거",
-	"manifest.settings.trim.mode.desc": "공백 제거 방식 선택",
-	"manifest.settings.trim.mode.option.both": "앞뒤 공백",
-	"manifest.settings.trim.mode.option.leading": "앞쪽 공백만",
-	"manifest.settings.trim.mode.option.trailing": "뒤쪽 공백만"
 }

@@ -100,9 +100,4 @@
 	"runtime.prompt.large-output.body": "{0}個の文字列が検出されました。どのように進めますか？",
 	"runtime.note.postprocess-footnote": "注：ソートと重複削除操作は、抽出された文字列リストに適用されます。",
 
-	"manifest.command.trim.title": "Trim Whitespace",
-	"manifest.settings.trim.mode.desc": "Choose trim behavior",
-	"manifest.settings.trim.mode.option.both": "Leading and trailing",
-	"manifest.settings.trim.mode.option.leading": "Leading only",
-	"manifest.settings.trim.mode.option.trailing": "Trailing only"
 }
