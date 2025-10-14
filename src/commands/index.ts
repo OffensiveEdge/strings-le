@@ -4,6 +4,7 @@ import type { Notifier } from '../ui/notifier';
 import type { StatusBar } from '../ui/statusBar';
 import { registerDedupeCommand } from './dedupe';
 import { registerExtractStringsCommand } from './extract';
+import { registerHelpCommand } from './help';
 import { registerSortCommand } from './sort';
 import { registerToggleCsvStreamingCommand } from './toggleCsvStreaming';
 import { registerTrimWhitespaceCommand } from './trim';
@@ -20,6 +21,7 @@ export function registerAllCommands(
 	registerExtractStringsCommand(context, deps);
 	registerDedupeCommand(context);
 	registerSortCommand(context);
-	registerToggleCsvStreamingCommand(context);
 	registerTrimWhitespaceCommand(context);
+	registerToggleCsvStreamingCommand(context);
+	registerHelpCommand(context, deps);
 }
