@@ -345,15 +345,14 @@ A: Absolutely! String-LE is perfect for extracting strings for internationalizat
 
 ## 📊 Test Coverage
 
-- 100% unit coverage on pure extraction and transforms
+- 137 passing tests across 18 test suites with comprehensive extraction coverage
+- Core extraction and transform modules have excellent coverage
 - Contract tests for configuration side-effects and parse-error handling
 - Data-driven fixtures with golden expected outputs per format
-- CSV streaming paths covered (batching, header/column selection)
-- Stable locale sorting and dedupe normalization in harness
+- Tests powered by Vitest
+- Runs quickly and locally: `bun run test`
 
 See [`TESTING.md`](docs/TESTING.md).
-
-![Test Coverage Report](src/assets/images/coverage-report-text.png)
 
 ---
 
