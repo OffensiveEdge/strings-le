@@ -121,4 +121,3 @@ Key settings:
 
 	context.subscriptions.push(command);
 }
-
