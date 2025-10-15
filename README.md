@@ -219,12 +219,9 @@ String-LE is built for speed across all supported formats:
 
 | Format   | Throughput      | Best For               | File Size Range | Hardware Tested  |
 | -------- | --------------- | ---------------------- | --------------- | ---------------- |
-| **ENV**  | 4M+ lines/sec   | Environment configs    | 1KB - 5MB       | M1 Mac, Intel i7 |
-| **JSON** | 1.8M+ lines/sec | APIs, large datasets   | 1KB - 200MB     | M1 Mac, Intel i7 |
-| **INI**  | 1.3M+ lines/sec | Configuration files    | 1KB - 10MB      | M1 Mac, Intel i7 |
-| **TOML** | 530K+ lines/sec | Modern configs         | 1KB - 25MB      | M1 Mac, Intel i7 |
-| **CSV**  | 440K+ lines/sec | Tabular data           | 1KB - 500MB     | M1 Mac, Intel i7 |
-| **YAML** | 190K+ lines/sec | Human-readable configs | 1KB - 50MB      | M1 Mac, Intel i7 |
+| **ENV**  | 3.3M lines/sec  | Environment configs    | 1KB - 5MB       | M1 Mac, Intel i7 |
+| **JSON** | 1.7M lines/sec  | APIs, large datasets   | 1KB - 200MB     | M1 Mac, Intel i7 |
+| **CSV**  | 472K lines/sec  | Tabular data           | 1KB - 500MB     | M1 Mac, Intel i7 |
 
 ### Performance Notes
 
@@ -347,7 +344,7 @@ A: Absolutely! String-LE is perfect for extracting strings for internationalizat
 
 ## 📊 Test Coverage
 
-- 137 passing tests across 18 test suites with comprehensive extraction coverage
+- 128 passing tests across 16 test suites with 50.45% overall coverage
 - Core extraction and transform modules have excellent coverage
 - Contract tests for configuration side-effects and parse-error handling
 - Data-driven fixtures with golden expected outputs per format
