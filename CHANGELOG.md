@@ -5,6 +5,18 @@ All notable changes to String-LE will be documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.1] - 2025-01-27
+
+### Fixed
+
+- **Help command activation** - Added missing `"onCommand:string-le.help"` activation event to ensure help command works properly
+- **Command parity** - Fixed inconsistency where help command was defined but not properly activated
+
+### Technical
+
+- All 6 commands now have proper activation events for consistent functionality
+- Maintained 100% backward compatibility with existing installations
+
 ## [1.4.0] - 2025-10-14
 
 ### Added

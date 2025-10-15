@@ -3,7 +3,7 @@
 	"publisher": "nolindnaidoo",
 	"displayName": "Strings-LE",
 	"description": "Zero Hassle Extraction from JSON, YAML, CSV, TOML, INI, and .ENV",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"license": "MIT",
 	"author": {
 		"name": "Nolin D Naidoo",
@@ -67,7 +67,8 @@
 		"onCommand:string-le.postProcess.dedupe",
 		"onCommand:string-le.postProcess.sort",
 		"onCommand:string-le.csv.toggleStreaming",
-		"onCommand:string-le.openSettings"
+		"onCommand:string-le.openSettings",
+		"onCommand:string-le.help"
 	],
 	"capabilities": {
 		"virtualWorkspaces": {
