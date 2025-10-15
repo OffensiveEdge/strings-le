@@ -217,11 +217,11 @@ See [`CONFIGURATION.md`](docs/CONFIGURATION.md).
 
 String-LE is built for speed across all supported formats:
 
-| Format   | Throughput      | Best For               | File Size Range | Hardware Tested  |
-| -------- | --------------- | ---------------------- | --------------- | ---------------- |
-| **ENV**  | 3.3M lines/sec  | Environment configs    | 1KB - 5MB       | M1 Mac, Intel i7 |
-| **JSON** | 1.7M lines/sec  | APIs, large datasets   | 1KB - 200MB     | M1 Mac, Intel i7 |
-| **CSV**  | 472K lines/sec  | Tabular data           | 1KB - 500MB     | M1 Mac, Intel i7 |
+| Format   | Throughput     | Best For             | File Size Range | Hardware Tested  |
+| -------- | -------------- | -------------------- | --------------- | ---------------- |
+| **ENV**  | 2.5M lines/sec | Environment configs  | 1KB - 5MB       | M1 Mac, Intel i7 |
+| **JSON** | 1.2M lines/sec | APIs, large datasets | 1KB - 200MB     | M1 Mac, Intel i7 |
+| **CSV**  | 57K lines/sec  | Tabular data         | 1KB - 500MB     | M1 Mac, Intel i7 |
 
 ### Performance Notes
 
