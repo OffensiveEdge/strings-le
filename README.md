@@ -40,18 +40,16 @@
   <img src="src/assets/images/command-palette.png" alt="Command Palette" style="max-width: 80%; height: auto;" />
 </p>
 
-## 🙏 Thank You!
+## 🙏 Thank You
 
-Thank you for using Strings-LE! If this extension has been helpful in extracting and managing your strings, please consider leaving a rating on [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.string-le) and [Open VSX](https://open-vsx.org/extension/nolindnaidoo/string-le). Your feedback helps other developers discover this tool and motivates continued development.
+If String-LE saves you time, a quick rating helps other developers discover it:  
+⭐ [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.string-le) • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/string-le)
 
-⭐ **Enjoying Strings-LE?** [Leave a rating](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.string-le) and help others find it too!
+## ✅ Why String-LE?
 
-## ✅ Why Strings-LE
+Extract strings from **any file format** — JSON, CSV, ENV, YAML, TOML — in one click. No regex. No scripts. Just results.
 
-**Modern projects scatter text everywhere** — APIs, configs, CSVs, and locale files across both native and web. Keeping those strings consistent is still a slow, manual grind.
-
-**Strings-LE makes extraction effortless.**  
-It smartly pulls out only the **true user-visible strings** (never numbers, IDs, or raw values) and gives you a clean, ordered set of text that’s ready for production.
+String-LE intelligently identifies **user-visible text** while filtering out numbers, IDs, URLs, and technical noise. Get a clean, ordered set of strings ready for i18n, documentation, or validation.
 
 - **i18n without the hassle**
 
@@ -76,73 +74,20 @@ It smartly pulls out only the **true user-visible strings** (never numbers, IDs,
 
 ## 🚀 More from the LE Family
 
-**Strings-LE** is part of a growing family of developer tools designed to make your workflow effortless:
+- **[Numbers-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.numbers-le)** - Extract and analyze numeric data with statistics • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/numbers-le)
+- **[EnvSync-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.envsync-le)** - Keep .env files in sync with visual diffs • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/envsync-le)
+- **[Paths-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.paths-le)** - Extract file paths from imports and dependencies • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/paths-le)
+- **[URLs-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.urls-le)** - Audit API endpoints and external resources • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/urls-le)
+- **[Scrape-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.scrape-le)** - Validate scraper targets before debugging • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/scrape-le)
+- **[Colors-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.colors-le)** - Extract and analyze colors from stylesheets • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/colors-le)
+- **[Dates-LE](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.dates-le)** - Extract temporal data from logs and APIs • [Open VSX](https://open-vsx.org/extension/nolindnaidoo/dates-le)
 
-- **EnvSync-LE** - Effortlessly detect, compare, and synchronize .env files across your workspace with visual diffs  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.envsync-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/envsync-le)]
+## 💡 Use Cases
 
-- **Numbers-LE** - Extract and analyze numeric data from JSON, YAML, CSV, TOML, INI, and .env files  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.numbers-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/numbers-le)]
-
-- **Paths-LE** - Extract and analyze file paths from imports, configs, and dependencies  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.paths-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/paths-le)]
-
-- **Scrape-LE** - Verify page reachability and detect anti-scraping measures before deploying scrapers  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.scrape-le)]
-
-- **Colors-LE** - Extract and analyze colors from CSS, HTML, JavaScript, and TypeScript  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.colors-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/colors-le)]
-
-- **Dates-LE** - Extract and analyze dates from logs, APIs, and temporal data  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.dates-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/dates-le)]
-
-- **URLs-LE** - Extract and analyze URLs from web content, APIs, and resources  
-  [[VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nolindnaidoo.urls-le)] [[Open VSX](https://open-vsx.org/extension/nolindnaidoo/urls-le)]
-
-Each tool follows the same philosophy: **Zero Hassle, Maximum Productivity**.
-
-## 💡 Use Cases & Examples
-
-### Internationalization (i18n)
-
-Extract user-visible strings for translation:
-
-```json
-// Extract from app.json
-{
-  "welcome": "Welcome to our application",
-  "error": "Something went wrong",
-  "success": "Operation completed successfully"
-}
-```
-
-### Content Management
-
-Extract content from CMS exports:
-
-```csv
-// Extract from content.csv
-id,title,description,category
-1,"New Product Launch","Introducing our latest innovation","Products"
-2,"Company Update","Important news about our services","News"
-```
-
-### API Response Analysis
-
-Extract user-facing messages from API responses:
-
-```json
-// Extract from api-responses.json
-{
-  "message": "User created successfully",
-  "error": "Invalid email format",
-  "warning": "Password too weak"
-}
-```
-
-### Documentation Extraction
-
-Extract text content from documentation files for content audits and updates.
+- **i18n & Localization** - Extract user-visible strings for translation files and language packs
+- **Content Management** - Pull titles, descriptions, and messages from CMS exports for auditing
+- **API Validation** - Extract user-facing messages and errors from API responses for documentation
+- **Documentation Audits** - Get all text content from docs for reviews and updates
 
 ## 🚀 Quick Start
 
@@ -215,20 +160,24 @@ See [`CONFIGURATION.md`](docs/CONFIGURATION.md).
 
 ## ⚡ Performance
 
-String-LE is built for speed across all supported formats:
+<!-- PERFORMANCE_START -->
 
-| Format   | Throughput     | Best For             | File Size Range | Hardware Tested  |
-| -------- | -------------- | -------------------- | --------------- | ---------------- |
-| **ENV**  | 2.5M lines/sec | Environment configs  | 1KB - 5MB       | M1 Mac, Intel i7 |
-| **JSON** | 1.2M lines/sec | APIs, large datasets | 1KB - 200MB     | M1 Mac, Intel i7 |
-| **CSV**  | 57K lines/sec  | Tabular data         | 1KB - 500MB     | M1 Mac, Intel i7 |
+String-LE is built for speed and handles files from 100KB to 30MB+. See [detailed benchmarks](docs/PERFORMANCE.md).
 
-### Performance Notes
+| Format   | File Size | Throughput | Duration | Memory | Tested On     |
+| -------- | --------- | ---------- | -------- | ------ | ------------- |
+| **JSON** | 0.13MB    | 4703509    | ~1.14    | < 1MB  | Apple Silicon |
+| **JSON** | 1.31MB    | 6337898    | ~8.47    | < 1MB  | Apple Silicon |
+| **JSON** | 6.55MB    | 6181529    | ~43.42   | < 1MB  | Apple Silicon |
+| **ENV**  | 5K lines  | 1,144,828  | ~0.29    | < 1MB  | Apple Silicon |
 
-- **Memory Usage**: ~100MB base + 2MB per 1000 strings processed
-- **Large Files**: Files over 100MB may show reduced throughput (100K-500K lines/sec)
-- **CSV Streaming**: Enables processing of files up to 500MB without memory issues
-- **Deduplication**: Adds 20-30% processing time when enabled
+**Note**: CSV format tests encountered parsing errors with generated test data. Real-world CSV performance may vary.  
+**Real-World Performance**: Tested with actual data up to 20MB (practical limit: 1MB warning, 10MB error threshold)  
+**Performance Monitoring**: Built-in real-time tracking with configurable thresholds  
+**Full Metrics**: [docs/PERFORMANCE.md](docs/PERFORMANCE.md) • Test Environment: macOS, Bun 1.2.22, Node 22.x
+
+<!-- PERFORMANCE_END -->
+
 - **Sorting**: Adds 10-20% processing time when enabled
 - **Hardware Requirements**: Minimum 4GB RAM, recommended 8GB+ for large datasets
 
@@ -236,120 +185,46 @@ See [`PERFORMANCE.md`](docs/PERFORMANCE.md).
 
 ## 🌍 Language Support
 
-English + 12 translations:
-
-- Chinese (Simplified), Spanish, French, Russian, Portuguese (Brazil)
-- Japanese, Korean, German, Italian, Vietnamese, Ukrainian, Indonesian
-
-See [`I18N.md`](docs/I18N.md).
+**13 languages**: English, German, Spanish, French, Indonesian, Italian, Japanese, Korean, Portuguese (Brazil), Russian, Ukrainian, Vietnamese, Chinese (Simplified)
 
 ## 🧩 System Requirements
 
-- **VS Code**: 1.70.0 or higher
-- **Node.js**: Not required (extension runs in VS Code's built-in runtime)
-- **Platform**: Windows, macOS, Linux
-- **Memory**: 100MB minimum, 500MB recommended for large datasets
-- **Storage**: 20MB for extension files
+**VS Code** 1.70.0+ • **Platform** Windows, macOS, Linux  
+**Memory** 500MB recommended for large files
 
-## 🔒 Privacy & Telemetry
+## 🔒 Privacy
 
-- Runs entirely locally; no data is sent off your machine.
-- Optional local-only logs can be enabled with `string-le.telemetryEnabled`.
-- Logs appear in Output panel → "String-LE".
-
-See [`PRIVACY.md`](docs/PRIVACY.md).
+100% local processing. No data leaves your machine. Optional logging: `string-le.telemetryEnabled`
 
 ## 🔧 Troubleshooting
 
-### Common Issues
+**Not detecting strings?**  
+Ensure file is saved with supported extension (.json, .yaml, .csv, .toml, .ini, .env)
 
-**Extension not detecting strings**
+**Large files slow?**  
+Enable CSV streaming: `string-le.csv.streamingEnabled: true`
 
-- Ensure file is saved and has a supported extension (.json, .yaml, .csv, .toml, .ini, .env)
-- Check that the file contains user-visible strings (not just IDs or numbers)
-- Try reloading VS Code window (`Ctrl/Cmd + Shift + P` → "Developer: Reload Window")
-
-**Performance issues with large files**
-
-- Files over 50MB may take longer to process
-- Enable `string-le.csv.streamingEnabled: true` for CSV files
-- Consider using `string-le.dedupeEnabled: false` to reduce processing time
-- Disable sorting with `string-le.sortEnabled: false` for faster extraction
-
-**Strings not appearing in results**
-
-- Verify the content contains user-visible strings (not IDs, numbers, or technical values)
-- Check if strings are inside comments or special sections
-- Ensure strings are properly quoted in the source file
-- Some formats may require specific parsing settings
-
-**CSV streaming issues**
-
-- Ensure CSV has proper headers for column selection
-- Check that `string-le.csv.streamingEnabled` is enabled
-- Verify CSV delimiter is standard (comma, semicolon, tab)
-- Large CSV files may require streaming to avoid memory issues
-- Multi-line strings in CSV may not be fully supported
-
-**Deduplication problems**
-
-- Enable `string-le.dedupeEnabled: true` for automatic deduplication
-- Check that similar strings are not being incorrectly merged
-- Some strings may appear different but are actually duplicates
-- Case sensitivity may affect deduplication results
-
-**Sorting issues**
-
-- Enable `string-le.sortEnabled: true` for automatic sorting
-- Sorting applies to final strings, not their original positions
-- Locale-specific sorting may vary by system settings
-- Some special characters may affect sort order
-
-**Extension crashes or freezes**
-
-- Check VS Code version compatibility (requires 1.70.0+)
-- Disable other string-related extensions temporarily
-- Check Output panel → "String-LE" for error messages
-- Consider reducing file size or using streaming mode
-
-### Getting Help
-
-- Check the [Issues](https://github.com/nolindnaidoo/string-le/issues) page for known problems
-- Enable telemetry logging: `string-le.telemetryEnabled: true`
-- Review logs in Output panel → "String-LE"
-- See [`TROUBLESHOOTING.md`](docs/TROUBLESHOOTING.md) for detailed guidance
+**Need help?**  
+Check [Issues](https://github.com/nolindnaidoo/string-le/issues) or enable logging: `string-le.telemetryEnabled: true`
 
 ## ❓ FAQ
 
-**Q: What types of strings are extracted?**
-A: String-LE extracts user-visible strings (text that users see) while excluding IDs, numbers, technical values, and variable names.
+**What strings are extracted?**  
+User-visible text only (excludes IDs, numbers, technical values, variable names)
 
-**Q: Can I extract strings from comments?**
-A: String-LE focuses on user-visible content, so comments are typically excluded. The extension is designed to extract strings that end users will see.
+**Can I get deduplication?**  
+Yes, enable `string-le.dedupeEnabled: true` to remove duplicates automatically
 
-**Q: How does deduplication work?**
-A: When `string-le.dedupeEnabled: true` is enabled, String-LE automatically removes duplicate strings from the results, keeping only unique entries.
+**Max file size?**  
+Up to 500MB with CSV streaming. Practical limit: 10MB for other formats
 
-**Q: Can I sort the extracted strings?**
-A: Yes, enable `string-le.sortEnabled: true` to automatically sort strings alphabetically. This helps with translation workflows and content management.
+**Perfect for i18n?**  
+Absolutely! Extract strings for translation files, locale management, and content audits
 
-**Q: How does CSV streaming work?**
-A: When `string-le.csv.streamingEnabled: true` is enabled, large CSV files are processed in chunks to avoid memory issues. You can select specific columns for extraction.
+## 📊 Testing
 
-**Q: What's the largest file size supported?**
-A: String-LE can handle files up to 500MB with CSV streaming enabled. For other formats, the limit is around 200MB for optimal performance.
-
-**Q: Does String-LE work with i18n files?**
-A: Absolutely! String-LE is perfect for extracting strings for internationalization, creating translation files, and managing locale content.
-
-## 📊 Test Coverage
-
-- 128 passing tests across 16 test suites with 50.45% overall coverage
-- Core extraction and transform modules have excellent coverage
-- Contract tests for configuration side-effects and parse-error handling
-- Data-driven fixtures with golden expected outputs per format
-- Tests powered by Vitest
-- Runs quickly and locally: `bun run test`
+**92 unit tests** • **95% function coverage, 92% line coverage**  
+Powered by Vitest • Run with `bun test --coverage`
 
 See [`TESTING.md`](docs/TESTING.md).
 
