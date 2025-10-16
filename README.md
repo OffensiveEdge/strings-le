@@ -223,7 +223,7 @@ Absolutely! Extract strings for translation files, locale management, and conten
 
 ## 📊 Testing
 
-**92 unit tests** • **95% function coverage, 92% line coverage**  
+**92 unit tests** • **44.11% function coverage, 9.05% line coverage**  
 Powered by Vitest • Run with `bun test --coverage`
 
 See [`TESTING.md`](docs/TESTING.md).
