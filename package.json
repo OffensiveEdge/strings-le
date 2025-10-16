@@ -3,7 +3,7 @@
 	"publisher": "nolindnaidoo",
 	"displayName": "Strings-LE",
 	"description": "Zero Hassle Extraction from JSON, YAML, CSV, TOML, INI, and .ENV",
-	"version": "1.4.5",
+	"version": "1.4.6",
 	"license": "MIT",
 	"author": {
 		"name": "Nolin D Naidoo",
@@ -183,16 +183,16 @@
 					],
 					"description": "%manifest.settings.notifications.level.desc%"
 				},
-			"string-le.postProcess.openInNewFile": {
-				"type": "boolean",
-				"default": true,
-				"description": "%manifest.settings.open.new-file.desc%"
-			},
-			"string-le.openResultsSideBySide": {
-				"type": "boolean",
-				"default": true,
-				"description": "%manifest.settings.open.side-by-side.desc%"
-			},
+				"string-le.postProcess.openInNewFile": {
+					"type": "boolean",
+					"default": true,
+					"description": "%manifest.settings.open.new-file.desc%"
+				},
+				"string-le.openResultsSideBySide": {
+					"type": "boolean",
+					"default": true,
+					"description": "%manifest.settings.open.side-by-side.desc%"
+				},
 				"string-le.safety.enabled": {
 					"type": "boolean",
 					"default": true,
